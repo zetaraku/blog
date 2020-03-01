@@ -49,7 +49,7 @@ favicon:
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
-  #since: 2015
+  since: 2020
 
   # Icon between year and copyright info.
   icon:
@@ -94,8 +94,8 @@ footer:
 # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
 creative_commons:
   license: by-nc-sa
-  sidebar: false
-  post: false
+  sidebar: true
+  post: true
   language:
 
 
@@ -104,10 +104,10 @@ creative_commons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+# scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -121,13 +121,15 @@ scheme: Muse
 # External url should start with http:// or https://
 menu:
   home: / || home
-  #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  about: /about/ || user
+  categories: /categories/ || th
+  tags: /tags/ || tags
   archives: /archives/ || archive
-  #schedule: /schedule/ || calendar
-  #sitemap: /sitemap.xml || sitemap
-  #commonweal: /404/ || heartbeat
+  Quotes: /quotes/ || quote-left
+  Funny Pics: /funny-pics/ || image
+  # 404 Not Found: /404/ || minus-circle
+  # schedule: /schedule/ || calendar
+  # sitemap: /sitemap.xml || sitemap
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -167,11 +169,11 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: /images/logo.png
   # If true, the avatar will be dispalyed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar will be rotated with the cursor.
-  rotated: false
+  rotated: true
 
 # Posts / Categories / Tags in sidebar.
 site_state: true
@@ -181,7 +183,7 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || github
+  GitHub: https://github.com/zetaraku || github
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
@@ -200,12 +202,12 @@ social_icons:
 # Blog rolls
 links_settings:
   icon: link
-  title: Links
+  title: External Links
   # Available values: block | inline
   layout: block
 
 links:
-  #Title: http://yoursite.com
+  Stack Overflow: https://stackoverflow.com/
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
@@ -261,17 +263,18 @@ symbols_count_time:
   wpm: 275
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Reward (Donate)
 # Front-matter variable (unsupport animation).
 reward_settings:
   # If true, reward will be displayed in every article by default.
-  enable: false
-  animation: false
-  #comment: Donate comment here.
+  enable: true
+  animation: true
+  comment: Donate me if you have too much money.
 
 reward:
+  Thank you!: /images/free_money.gif
   #wechatpay: /images/wechatpay.png
   #alipay: /images/alipay.png
   #paypal: /images/paypal.png
@@ -285,6 +288,7 @@ follow_me:
   #WeChat: /images/wechat_channel.jpg || wechat
   #RSS: /atom.xml || rss
 
+# TODO:
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
@@ -301,9 +305,9 @@ related_posts:
 # Post edit
 # Dependencies: https://github.com/hexojs/hexo-deployer-git
 post_edit:
-  enable: false
-  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name # Link for view source
-  #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name # Link for fork & edit
+  enable: true
+  # url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name # Link for view source
+  url: https://github.com/zetaraku/blog/tree/master/source/ # Link for fork & edit
 
 # Show previous post and next post in post footer if exists
 # Available values: left | right | false
@@ -366,22 +370,22 @@ codeblock:
   highlight_theme: normal
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result.
-    show_result: false
+    show_result: true
     # Available values: default | flat | mac
-    style:
+    style: flat
 
 back2top:
   enable: true
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # Reading progress bar
 reading_progress:
-  enable: false
+  enable: true
   # Available values: top | bottom
   position: top
   color: "#37c6c0"
@@ -398,8 +402,8 @@ bookmark:
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
-  enable: false
-  permalink: https://github.com/yourname
+  enable: true
+  permalink: https://github.com/zetaraku
   title: Follow me on GitHub
 
 
@@ -469,18 +473,18 @@ disable_baidu_transformation: false
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post / page titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, site-subtitle will be added to index page.
 # Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)
-index_with_subtitle: false
+index_with_subtitle: true
 
 # Automatically add external URL with Base64 encrypt & decrypt.
 exturl: false
 
 # Google Webmaster tools verification.
 # See: https://www.google.com/webmasters
-google_site_verification:
+google_site_verification: R0Q3Gka5-DM2y2O9W016F2QMzumCohypkTWzEXBpuik
 
 # Bing Webmaster tools verification.
 # See: https://www.bing.com/webmaster
@@ -528,7 +532,7 @@ math:
 
 # Easily enable fast Ajax navigation on your website.
 # Dependencies: https://github.com/theme-next/theme-next-pjax
-pjax: false
+pjax: true
 
 # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
 # For more information: https://fancyapps.com/fancybox
@@ -537,11 +541,11 @@ fancybox: false
 # A JavaScript library for zooming images like Medium.
 # Do not enable both `fancybox` and `mediumzoom`.
 # For more information: https://github.com/francoischalifour/medium-zoom
-mediumzoom: false
+mediumzoom: true
 
 # Vanilla JavaScript plugin for lazyloading images.
 # For more information: https://github.com/ApoorvSaxena/lozad.js
-lazyload: false
+lazyload: true
 
 # Pangu Support
 # For more information: https://github.com/vinta/pangu.js
@@ -596,8 +600,8 @@ comments:
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: rakus-blog
   count: true
   #post_meta_order: 0
 
@@ -685,7 +689,7 @@ add_this_id:
 
 # Google Analytics
 google_analytics:
-  tracking_id: # <app_id>
+  tracking_id: UA-83813049-3  # <app_id>
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
   only_pageview: false
@@ -717,10 +721,10 @@ leancloud_visitors:
 # Visit https://console.firebase.google.com/u/0/ to get apiKey and projectId.
 # Visit https://firebase.google.com/docs/firestore/ to get more information about firestore.
 firestore:
-  enable: false
+  enable: true
   collection: articles # Required, a string collection name to access firestore database
-  apiKey: # Required
-  projectId: # Required
+  apiKey: AIzaSyDjdMLjo5WjfjKbvi7-wOAenrhBfHkUAw4  # Required
+  projectId: rakus-blog  # Required
 
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
@@ -753,14 +757,14 @@ algolia_search:
 # Local Search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
-  enable: false
+  enable: true
   # If auto, trigger search by changing input.
   # If manual, trigger search by pressing enter key or search button.
   trigger: auto
   # Show top n results per article, show all results by setting to -1
   top_n_per_article: 1
   # Unescape html strings to the readable one.
-  unescape: false
+  unescape: true
   # Preload the search data when the page loads.
   preload: false
 
@@ -803,7 +807,7 @@ note:
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
   style: simple
-  icons: false
+  icons: true
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
@@ -859,7 +863,7 @@ motion:
 # Dependencies: https://github.com/theme-next/theme-next-pace
 # For more information: https://github.com/HubSpot/pace
 pace:
-  enable: false
+  enable: true
   # Themes list:
   # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
   # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
@@ -930,8 +934,8 @@ vendors:
   copy_tex_css:
 
   # Internal version: 0.2.8
-  # pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js
-  pjax:
+  pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js
+  # pjax:
 
   # FancyBox
   # jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
@@ -1001,12 +1005,12 @@ vendors:
   velocity_ui:
 
   # Internal version: 1.0.2
-  # pace: //cdn.jsdelivr.net/npm/pace-js@1/pace.min.js
+  pace: //cdn.jsdelivr.net/npm/pace-js@1/pace.min.js
   # pace: //cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js
-  # pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
+  pace_css: //cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css
   # pace_css: //cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-minimal.min.css
-  pace:
-  pace_css:
+  # pace:
+  # pace_css:
 
   # Internal version: 1.0.0
   # three: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js

@@ -95,6 +95,19 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: next
 
+sitemap:
+  path: sitemap.xml
+  # template: ./sitemap_template.xml
+  rel: true
+
+# hexo-generator-searchdb configuration
+# https://github.com/theme-next/hexo-generator-searchdb
+search:
+  path: search.json
+  field: all
+  format: html
+  limit: 10000
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
