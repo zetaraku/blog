@@ -12,6 +12,8 @@ Modify this option in `_config.yml`.
 theme: <theme-name>    # <- change the 'theme' option to the theme name you're using
 ```
 
+<!-- more -->
+
 # Install a theme
 
 ```sh

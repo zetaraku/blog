@@ -21,6 +21,8 @@ cd <project-name>
 npm install    # install dependencies
 ```
 
+<!-- more -->
+
 ### 3. Setup version control for your project.
 
 ```sh
