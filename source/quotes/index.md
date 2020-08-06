@@ -3,6 +3,11 @@ title: Programming Quotes
 ---
 
 {% centerquote %}
+Do One Thing And Do It Well.
+<cite>The UNIX Philosophy</cite>
+{% endcenterquote %}
+
+{% centerquote %}
 Keep it simple and straightforward.
 <cite>The KISS principle*</cite>
 {% endcenterquote %}
@@ -18,8 +23,18 @@ Always code as if the guy who ends up maintaining your code will be a violent ps
 {% endcenterquote %}
 
 {% centerquote %}
+The best way to learn is to teach.
+<cite>Frank Oppenheimer</cite>
+{% endcenterquote %}
+
+{% centerquote %}
 First solve the problem. Then, write the code.
 <cite>Waseem Latif</cite>
+{% endcenterquote %}
+
+{% centerquote %}
+The sooner you start to code, the longer the program will take.
+<cite>Roy Carlson</cite>
 {% endcenterquote %}
 
 {% centerquote %}
