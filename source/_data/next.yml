@@ -125,6 +125,7 @@ menu:
   categories: /categories/ || th
   tags: /tags/ || tags
   archives: /archives/ || archive
+  Principles: /principles/ || star
   Quotes: /quotes/ || quote-left
   Funny Pics: /funny-pics/ || image
   # 404 Not Found: /404/ || minus-circle
