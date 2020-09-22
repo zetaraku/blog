@@ -13,6 +13,11 @@ Keep it simple and straightforward.
 {% endcenterquote %}
 
 {% centerquote %}
+Three strikes and you refactor.
+<cite>Rule of three (by Don Roberts)</cite>
+{% endcenterquote %}
+
+{% centerquote %}
 If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is.
 <cite>John von Neumann</cite>
 {% endcenterquote %}
@@ -33,6 +38,11 @@ First solve the problem. Then, write the code.
 {% endcenterquote %}
 
 {% centerquote %}
+If you can't solve a problem, then there is an easier problem you can solve: find it.
+<cite>George Polya</cite>
+{% endcenterquote %}
+
+{% centerquote %}
 The sooner you start to code, the longer the program will take.
 <cite>Roy Carlson</cite>
 {% endcenterquote %}
@@ -40,6 +50,11 @@ The sooner you start to code, the longer the program will take.
 {% centerquote %}
 If you think good architecture is expensive, try bad architecture.
 <cite>Brian Foote & Joseph Yoder</cite>
+{% endcenterquote %}
+
+{% centerquote %}
+If you think education is expensive, try ignorance.
+<cite>Robert Orben</cite>
 {% endcenterquote %}
 
 {% centerquote %}
