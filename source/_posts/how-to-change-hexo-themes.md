@@ -37,6 +37,7 @@ git submodule add <theme-repo-url> themes/<theme-name>
 # Remove a theme as a submodule
 
 ```sh
+rm -rf themes/<theme-name>
 git submodule deinit -f themes/<theme-name>
 rm -rf .git/modules/themes/<theme-name>
 git rm -f themes/<theme-name>
